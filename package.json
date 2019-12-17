@@ -1,0 +1,19 @@
+{
+  "name": "PersonalWebpage",
+  "version": "1.0.0",
+  "description": "Personal Webpage for Eric Kulchycki",
+  "author": "Eric Kulchycki",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0",
+    "vue-smooth-scroll": "^1.0.13"
+  },
+  "devDependencies": {}
+}
