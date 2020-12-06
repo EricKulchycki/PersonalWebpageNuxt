@@ -1,32 +1,30 @@
 <template>
-  <div class="nav background">
-    <el-row :gutter="20">
-      <el-col :span="6">
-        <div class="name">Eric Kulchycki</div>
-      </el-col>
-      <el-col :span="18">
-        <div class="nav-flex">
-          <nuxt-link to="/" class="nav-button">
-            <div>
-              <i class="el-icon-s-home nav-icon" />Home
-            </div>
-          </nuxt-link>
-          <nuxt-link to="/about" class="nav-button">
-            <div>
-              <i class="el-icon-user-solid nav-icon" />About
-            </div>
-          </nuxt-link>
-          <nuxt-link to="/projects" class="nav-button">
-            <div>
-              <i class="el-icon-folder nav-icon" />Projects
-            </div>
-          </nuxt-link>
+  <div class="container">
+    <div class="top flex justify align">
+      <div class="flex vert align">
+        <span class="text dev">&lt;/&gt;</span>
+        <div class="name text">
+          Eric Kulchycki
         </div>
-      </el-col>
-    </el-row>
+        <div class="desc text">
+          Software Developer
+        </div>
+      </div>
+    </div>
+    <div class="wave">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%;"
+      >
+        <path
+          d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill:#b4cdcd;"
+        />
+      </svg>
+    </div>
   </div>
 </template>
-
 
 <script>
 export default {
@@ -46,50 +44,46 @@ export default {
 </script>
 
 <style scoped>
-.nav {
-  color: #f1f0f0;
-  background-color: transparent;
-  height: 60px;
-  width: 100%;
-  text-decoration: none;
-  font-size: 1.6em;
+.container {
+  margin-bottom: 3rem;
 }
 
-.background {
-  background: url("../assets/stars.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.top {
+  height: 300px;
+  background-color: #b4cdcd;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wave {
+  display: inline-block;
+  position: relative;
   width: 100%;
+  height: 150px;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.text {
+  color: white;
 }
 
 .name {
-  font-weight: 800;
-  letter-spacing: 0.2em;
-  padding: 10px 20px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-.nav-button {
-  font-size: 0.7em;
-  margin-right: 15px;
-  margin-top: 7px;
-  padding: 10px;
-  color: #f1f0f0;
-  text-decoration: none;
+.desc {
+  font-size: 2rem;
 }
 
-.nav-button:hover {
-  background-color: #607a8383;
-  border-radius: 3px;
-}
-
-.nav-icon {
-  margin-right: 5px;
-}
-
-.nav-flex {
-  display: flex;
-  justify-content: flex-end;
+.dev {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 </style>
