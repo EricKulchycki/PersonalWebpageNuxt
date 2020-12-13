@@ -1,15 +1,7 @@
 <template>
   <div>
-    <h1>Tim apple penis</h1>
+    <div class="flex justify">
+      <Header title="about me." />
+    </div>
   </div>
 </template>
-
-<script>
-import Nav from "../components/Nav.vue";
-
-export default {
-  components: {
-    Nav
-  }
-};
-</script>

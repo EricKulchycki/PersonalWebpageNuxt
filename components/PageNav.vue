@@ -1,16 +1,35 @@
 <template>
-  <div class="grid page-nav">
-    <div>home.</div>
-    <div>about.</div>
-    <div>projects.</div>
+  <div style="margin-bottom: 2rem">
+    <div class="grid page-nav">
+      <NuxtLink to="/">
+        home.
+      </NuxtLink>
+      <NuxtLink to="/about">
+        about.
+      </NuxtLink>
+      <NuxtLink to="/project">
+        projects.
+      </NuxtLink>
+    </div>
+    <el-divider />
   </div>
 </template>
 
-<style>
+<style scoped>
 .page-nav {
   grid-template-columns: repeat(3, 80px);
   column-gap: 1rem;
+}
 
-  margin-bottom: 3rem;
+a {
+  text-decoration: none;
+  color: black;
+  transition: 0.1s;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: #a6a6a6;
 }
 </style>

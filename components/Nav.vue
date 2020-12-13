@@ -26,23 +26,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      activeIndex: "1",
-      activeIndex2: "2",
-      activeIndex3: "3"
-    };
-  },
-  methods: {
-    handleSelect(key, keyPath) {
-      console.log(key, keyPath);
-    }
-  }
-};
-</script>
-
 <style scoped>
 .container {
   margin-bottom: 3rem;

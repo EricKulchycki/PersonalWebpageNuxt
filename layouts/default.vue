@@ -47,5 +47,7 @@ body {
 .app-container {
   width: 100%;
   max-width: 800px;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 </style>

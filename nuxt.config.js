@@ -11,21 +11,20 @@ export default {
       {
         hid: "eric kulchycki",
         name: "Eric Kulchycki",
-        content: process.env.npm_package_description || "",
-      },
+        content: process.env.npm_package_description || ""
+      }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=Montserrat&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
-      },
-    ],
+        href: "https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -55,7 +54,14 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {},
+    extend(config, ctx) {}
   },
   components: true,
+  buildModules: ["@nuxtjs/fontawesome"],
+  fontawesome: {
+    icons: {
+      solid: true,
+      brands: ["faNode", "faVuejs", "faLinkedin"]
+    }
+  }
 };
