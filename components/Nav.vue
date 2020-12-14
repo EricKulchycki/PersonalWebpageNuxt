@@ -29,6 +29,7 @@
 <style scoped>
 .container {
   margin-bottom: 3rem;
+  line-height: 3rem;
 }
 
 .top {
