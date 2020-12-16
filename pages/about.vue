@@ -10,13 +10,13 @@
       i am a 24 year old canadian, living in manitoba, and working in the agriculture technology sector.
       in decemeber 2019 i graduated from the University of Manitoba with a BSc. in Computer Science, with a specialization in software developement.
       in my spare time i enjoy cooking, shitty 90's sitcoms, and playing disc golf! 
-      A lot of what i do on weekends changes based on the season. separation of work and personal life is important, 
+      a lot of what i do on weekends changes based on the season. separation of work and personal life is important to me, 
       so i have a lot of hobbies to keep me busy.
     </p>
     <h3>
       development.
     </h3>
-    <div class="flex space-evenly">
+    <div class="flex space-evenly wrap">
       <div>
         <h5>languages.</h5>
         <div>
@@ -81,5 +81,9 @@
     border-color: #00a8a8;
     transform-origin: bottom left;
     transform: rotate(45deg);
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 </style>

@@ -33,6 +33,11 @@
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default {
+  head() {
+    return {
+      title: "Eric Kulchycki"
+    };
+  },
   computed: {
     faLinkedin() {
       return faLinkedin;

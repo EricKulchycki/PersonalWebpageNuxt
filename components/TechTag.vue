@@ -46,6 +46,7 @@ export default {
   border-radius: 16px;
   padding: 0.5rem;
   margin-right: 0.5rem;
+  margin-top: 0.5rem;
   background-color: #f8f8f8;
   font-weight: bold;
   color: #333;
